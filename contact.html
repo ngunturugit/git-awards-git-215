@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nikhit Gunturu">
+    <meta name="description" content="Contact Lux for bookings and questions, a beautiful resort in the Swiss Alps. Book your stay today!">
+    <title>Lux | Contact</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    
+    <header>
+        <h1>Lux</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html"><u>Home</u></a></li>
+            <li><a href="#"><u>Accommodations</u></a></li>
+            <li><a href="contact.html"><u>Contact</u></a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <img src="swiss-valley.jpg" alt="Hero image of Swiss Valley" width="1200px">
+
+        <main>
+            <h2>Contact Us</h2>
+            <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required fields marked with a *</p>
+            <img src="swiss-peak.jpg" alt="Swiss Peak" width="400" height="300">
+            <form action="submit-form.php" method="post">
+                <div class="contact-form-section">
+                    <label for="full-name">Full Name *</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="contact-form-section">
+                    <fieldset>
+                        <legend>Preferred Contact Method *</legend>
+                        <label for="email-radio">Email</label>
+                        <input type="radio" id="email-radio" name="contact-method" value="email" required>
+                        <label for="phone-radio">Phone</label>
+                        <input type="radio" id="phone-radio" name="contact-method" value="phone" required>
+                    </fieldset>
+                    <label for="comments">Comments *</label>
+                    <textarea id="comments" name="comments" required></textarea>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </main>
+    <footer>
+        <p>Copyright ©2023 - Lux</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+</body>
+</html>
+

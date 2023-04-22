@@ -1,0 +1,170 @@
+/* Primary colors */
+:root {
+    --primary-color: #0077b6;
+    --secondary-color: #f2a154;
+    --background-color: #f6f6f6;
+  }
+  
+  /* Text colors */
+  body {
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    color: var(--primary-color);
+  }
+  
+  /* Links */
+  a {
+    color: var(--secondary-color);
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: block;
+    padding: 1rem;
+    background-color: var(--burgundy);
+    color: var(--lt-cream);
+    border-radius: 32px;
+    transition: all 500ms;
+    box-shadow: var(--box-shadow-lg);
+  }
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+nav a:hover {
+    background-color: var(--dk-cream);
+    color: var(--burgundy);
+    transform: scale(1.1);
+    box-shadow: var(--box-shadow-xl);
+  }  
+
+  body {
+    max-width: 1200px; /* adjust to desired width */
+    margin: 0 auto; /* center the page horizontally */
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 4rem;
+  }
+
+  footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+   /* END HEADER and footer STYLES */
+
+   main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  main h2 {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    background-color:#B2BEB5;
+    margin-top: 50px;
+  }
+  
+  main p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  main img {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+  }
+
+
+     /* END H2 STYLES */
+     form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      
+      form label,
+      form input,
+      form textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      
+      form label {
+        font-weight: bold;
+        text-align: left;
+      }
+      
+      form input[type="radio"] {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      
+      form fieldset {
+        margin-bottom: 20px;
+        padding: 0;
+        border: none;
+      }
+      
+      form textarea {
+        height: 120px;
+      }
+      
+      /* add margin to the right of the first part */
+      form > div:first-child {
+        margin-right: 20px;
+      }
+      
+      @media (max-width: 480px) {
+        form label,
+        form input,
+        form textarea {
+          width: 100%;
+        }
+      }
+      
